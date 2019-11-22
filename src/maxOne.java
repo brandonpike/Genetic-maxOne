@@ -9,8 +9,8 @@ import java.util.Random;
 import java.util.Set;
 
 /*
- * 		  [Author]
- * 	    Brandon Pike
+ *        [Author]
+ *      Brandon Pike
  *        UTDallas
  *  Software Engineering
  */
@@ -108,7 +108,7 @@ public class maxOne {
 	 *  Params: gene - ("0001")
 	 *  Output: fitness value out of 1 (# of 1's / gene.length())
 	 */
-	public static double getFitness(String gene) {
+	private static double getFitness(String gene) {
 		int sum = 0;
 		for(int i=0; i<gene.length(); i++) {
 			sum += (gene.charAt(i) == '1') ? 1 : 0;
@@ -121,7 +121,7 @@ public class maxOne {
 	 *  Params: n - binary string size ; ("0001" if n=4)
 	 *  Output: randomized population
 	 */
-	public static HashMap<String, Double> popInit(int n) {
+	private static HashMap<String, Double> popInit(int n) {
 		HashMap<String, Double> pop = new HashMap<String, Double>();
 		Random r;
 		for(int i=0; i<POP_SIZE; i++) {
