@@ -19,8 +19,8 @@ public class maxOne {
 
 	// Genetic constants
 	private static int POP_SIZE = 20,
-						SELECTS = 10,
-						GENERATIONS = 500;
+				SELECTS = 10,
+				GENERATIONS = 500;
 	private static double MUT_RATE = .5;
 	/*
 	 *  Genetic Algorithm to solve the Max One problem
